@@ -1,0 +1,70 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Menu de navegação */
+nav {
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav a {
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 14px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+}
+
+/* Estilo da seção de contato */
+#contato {
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+#contato h2 {
+  color: #4CAF50;
+}
+#contato a {
+  color: #333;
+  text-decoration: none;
+}
+#contato a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  nav a {
+    flex: 100%; /* Links ocupam toda a largura no celular */
+  }
+}
