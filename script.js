@@ -13,3 +13,18 @@ function mostrar(id) {
 
 // Mostra "Início" por padrão
 mostrar('inicio');
+
+// ----------------------
+// Contador de visitas
+// ----------------------
+
+let visitas = localStorage.getItem("Visitas") || 0;
+visitas++;
+localStorage.setItem("Visitas", visitas);
+
+// Mostra no console
+console.log(`Você visitou esta página ${visitas} vezes.`);
+
+// Também mostra na página (precisa ter um <p id="contador"> no HTML)
+document.getElementById("contador").textContent =
+  `Você visitou esta página ${visitas} vezes.`
