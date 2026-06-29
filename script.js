@@ -2,6 +2,10 @@ function mostrar(id) {
   // Esconde todas as seções
   document.getElementById('inicio').style.display = 'none';
   document.getElementById('sobre').style.display = 'none';
+  document.getElementById('contato').style.display = 'none';
+  document.getElementById('habilidades').style.display = 'none';
+  document.getElementById('projetos').style.display = 'none';
+  document.getElementById('curiosidades').style.display = 'none';
   
   // Mostra apenas a escolhida
   document.getElementById('contato').style.display = 'block';
